@@ -112,9 +112,9 @@ def main():
     if len(latest) == 1:
         val_prev, val_inc, val_ylds = latest[['prevalence_rate','incidence_rate','ylds_rate']].iloc[0]
     else:
-        val_prev = latest.prevalence_rate.mean()
-        val_inc  = latest.incidence_rate.mean()
-        val_ylds = latest.ylds_rate.mean()
+        val_prev = latest.prevalence_rate.sum()
+        val_inc  = latest.incidence_rate.sum()
+        val_ylds = latest.ylds_rate.sum()
 
     total_workers = hr_df['workers_per_100k'].sum()
     outp_rate     = fac_df.query("facility_type=='Outpatient'")['users_per_100k'].squeeze()
