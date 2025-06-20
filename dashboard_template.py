@@ -166,7 +166,8 @@ def main():
         "YLDs Rate":       "ylds_rate"
     }
     metric_choice = st.selectbox("Choose metric", list(metric_map.keys()), key="main_metric")
-    st.markdown(f"#### {metric_choice} per 100k — Global vs Lebanon", unsafe_allow_html=True)
+    disorder_text1 = ", ".join(sel_causes)
+    st.markdown(f"#### {metric_choice} per 100k for **{disorder_text1}** — Global vs Lebanon", unsafe_allow_html=True)
 
     df_plot = (
         mh_df[
@@ -222,8 +223,9 @@ def main():
         st.dataframe(styled_hr, height=280)
 
     with col3:
+        disorder_text2 = ", ".join(sel_rf_causes)
         st.markdown(
-            "<h4 style='text-align:center;'>YLD Rate by Age & Risk Factor (2021)</h4>",
+            f"<h4 style='text-align:center;'>YLD Rate by Age & Risk Factor for {disorder_text2} (2021)</h4>",
             unsafe_allow_html=True
         )
         rf = (
