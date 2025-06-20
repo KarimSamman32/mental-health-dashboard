@@ -200,7 +200,7 @@ def main():
             alt.Chart(risk_df).mark_bar(color='#ddd', size=16)
             .encode(
                 y=alt.Y('disorder:N', sort=alt.EncodingSortField('or', order='descending'), title=''),
-                x=alt.X('ci_lower:Q', scale=alt.Scale(domain=[0, max_upper])),
+                x=alt.X('ci_lower:Q', title="Risk increase by number of folds (x)", scale=alt.Scale(domain=[0, max_upper])),
                 x2='ci_higher'
             )
         )
