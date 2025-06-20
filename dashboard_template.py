@@ -195,7 +195,9 @@ def main():
     # Row 2 chart
     col1, col2, col3 = st.columns([2,2,3])
     with col1:
-        st.markdown("<h4 style='text-align:center;'>Suicide Ideation Risk by Disorder (2014)</h4>", unsafe_allow_html=True)
+        st.markdown(
+            f"<div style='font-size:1.5em;'><h4 style='text-align:center;'>Suicide Ideation Risk by Disorder (2014)</h4></div>", 
+            unsafe_allow_html=True)
         max_upper = risk_df['ci_higher'].max() * 1.1
         interval = (
             alt.Chart(risk_df).mark_bar(color='#ddd', size=16)
@@ -210,7 +212,7 @@ def main():
 
     with col2:
         st.markdown(
-            "<h4 style='text-align:center;'>HC Workers per 100k by Profession (2015)</h4>",
+            f"<div style='font-size:1.5em;'><h4 style='text-align:center;'>HC Workers per 100k by Profession (2015)</h4></div>",
             unsafe_allow_html=True
         )
         hr_display = (
@@ -225,7 +227,7 @@ def main():
     with col3:
         disorder_text2 = ", ".join(sel_rf_causes)
         st.markdown(
-            f"<h4 style='text-align:center;'>YLD Rate by Age & Risk Factor for {disorder_text2} (2021)</h4>",
+            f"<div style='font-size:1.5em;'><h4 style='text-align:center;'>YLD Rate by Age & Risk Factor for {disorder_text2} (2021)</h4></div>",
             unsafe_allow_html=True
         )
         rf = (
