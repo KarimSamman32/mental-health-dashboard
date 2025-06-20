@@ -124,37 +124,37 @@ def main():
     _, m1, m2, m3, m4, m5, m6, _ = st.columns([1,3,3,3,3,3,3,1])
     with m1:
         st.markdown(
-            f"<div style='font-size:1.1em; font-weight:600;'>Prevalence (2021, per 100k)</div>"
+            f"<div style='font-size:0.9em; font-weight:600;'>Prevalence (2021, per 100k)</div>"
             f"<div style='font-size:2.0em; font-weight:700; margin-top:4px;'>{val_prev:.1f}</div>",
             unsafe_allow_html=True
         )
     with m2:
         st.markdown(
-            f"<div style='font-size:1.1em; font-weight:600;'>Incidence (2021, per 100k)</div>"
+            f"<div style='font-size:0.9em; font-weight:600;'>Incidence (2021, per 100k)</div>"
             f"<div style='font-size:2.0em; font-weight:700; margin-top:4px;'>{val_inc:.1f}</div>",
             unsafe_allow_html=True
         )
     with m3:
         st.markdown(
-            f"<div style='font-size:1.1em; font-weight:600;'>YLDs (2021, per 100k)</div>"
+            f"<div style='font-size:0.9em; font-weight:600;'>YLDs (2021, per 100k)</div>"
             f"<div style='font-size:2.0em; font-weight:700; margin-top:4px;'>{val_ylds:.1f}</div>",
             unsafe_allow_html=True
         )
     with m4:
         st.markdown(
-            f"<div style='font-size:1.1em; font-weight:600;'>HC Workers (2015, per 100k)</div>"
+            f"<div style='font-size:0.9em; font-weight:600;'>HC Workers (2015, per 100k)</div>"
             f"<div style='font-size:2.0em; font-weight:700; margin-top:4px;'>{total_workers:.1f}</div>",
             unsafe_allow_html=True
         )
     with m5:
         st.markdown(
-            f"<div style='font-size:1.1em; font-weight:600;'>Outpatients (2015, per 100k)</div>"
+            f"<div style='font-size:0.9em; font-weight:600;'>Outpatients (2015, per 100k)</div>"
             f"<div style='font-size:2.0em; font-weight:700; margin-top:4px;'>{outp_rate:.1f}</div>",
             unsafe_allow_html=True
         )
     with m6:
         st.markdown(
-            f"<div style='font-size:1.1em; font-weight:600;'>Inpatients (2015, per 100k)</div>"
+            f"<div style='font-size:0.9em; font-weight:600;'>Inpatients (2015, per 100k)</div>"
             f"<div style='font-size:2.0em; font-weight:700; margin-top:4px;'>{inp_rate:.1f}</div>",
             unsafe_allow_html=True
         )
