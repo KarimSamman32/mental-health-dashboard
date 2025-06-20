@@ -1,0 +1,85 @@
+measure,location,sex,age,cause,risk_factor,metric,year,ylds_rate_per_100k
+YLDs (Years Lived with Disability),Lebanon,Male,0-14 years,Depressive disorders,Behavioral risks,Rate,2021,26.88
+YLDs (Years Lived with Disability),Lebanon,Female,0-14 years,Depressive disorders,Behavioral risks,Rate,2021,18.37
+YLDs (Years Lived with Disability),Lebanon,Both,0-14 years,Depressive disorders,Behavioral risks,Rate,2021,22.83
+YLDs (Years Lived with Disability),Lebanon,Male,0-14 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,26.88
+YLDs (Years Lived with Disability),Lebanon,Female,0-14 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,18.37
+YLDs (Years Lived with Disability),Lebanon,Both,0-14 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,22.83
+YLDs (Years Lived with Disability),Lebanon,Male,0-14 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,60.62
+YLDs (Years Lived with Disability),Lebanon,Female,0-14 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,27.21
+YLDs (Years Lived with Disability),Lebanon,Both,0-14 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,44.70
+YLDs (Years Lived with Disability),Lebanon,Male,0-14 years,Anxiety disorders,Behavioral risks,Rate,2021,60.62
+YLDs (Years Lived with Disability),Lebanon,Female,0-14 years,Anxiety disorders,Behavioral risks,Rate,2021,27.21
+YLDs (Years Lived with Disability),Lebanon,Both,0-14 years,Anxiety disorders,Behavioral risks,Rate,2021,44.70
+YLDs (Years Lived with Disability),Lebanon,Male,15-39 years,Depressive disorders,Behavioral risks,Rate,2021,153.33
+YLDs (Years Lived with Disability),Lebanon,Female,15-39 years,Depressive disorders,Behavioral risks,Rate,2021,291.37
+YLDs (Years Lived with Disability),Lebanon,Both,15-39 years,Depressive disorders,Behavioral risks,Rate,2021,219.73
+YLDs (Years Lived with Disability),Lebanon,Male,15-39 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,153.33
+YLDs (Years Lived with Disability),Lebanon,Female,15-39 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,103.05
+YLDs (Years Lived with Disability),Lebanon,Both,15-39 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,129.15
+YLDs (Years Lived with Disability),Lebanon,Male,15-39 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,103.86
+YLDs (Years Lived with Disability),Lebanon,Female,15-39 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,52.50
+YLDs (Years Lived with Disability),Lebanon,Both,15-39 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,79.16
+YLDs (Years Lived with Disability),Lebanon,Male,15-39 years,Anxiety disorders,Behavioral risks,Rate,2021,103.86
+YLDs (Years Lived with Disability),Lebanon,Female,15-39 years,Anxiety disorders,Behavioral risks,Rate,2021,52.50
+YLDs (Years Lived with Disability),Lebanon,Both,15-39 years,Anxiety disorders,Behavioral risks,Rate,2021,79.16
+YLDs (Years Lived with Disability),Lebanon,Male,40-44 years,Anxiety disorders,Behavioral risks,Rate,2021,27.22
+YLDs (Years Lived with Disability),Lebanon,Female,40-44 years,Anxiety disorders,Behavioral risks,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Both,40-44 years,Anxiety disorders,Behavioral risks,Rate,2021,12.91
+YLDs (Years Lived with Disability),Lebanon,Male,40-44 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,27.22
+YLDs (Years Lived with Disability),Lebanon,Female,40-44 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Both,40-44 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,12.91
+YLDs (Years Lived with Disability),Lebanon,Male,40-44 years,Depressive disorders,Behavioral risks,Rate,2021,100.87
+YLDs (Years Lived with Disability),Lebanon,Female,40-44 years,Depressive disorders,Behavioral risks,Rate,2021,316.81
+YLDs (Years Lived with Disability),Lebanon,Both,40-44 years,Depressive disorders,Behavioral risks,Rate,2021,214.41
+YLDs (Years Lived with Disability),Lebanon,Male,40-44 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,100.87
+YLDs (Years Lived with Disability),Lebanon,Female,40-44 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,65.18
+YLDs (Years Lived with Disability),Lebanon,Both,40-44 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,82.11
+YLDs (Years Lived with Disability),Lebanon,Male,45-49 years,Anxiety disorders,Behavioral risks,Rate,2021,1.53
+YLDs (Years Lived with Disability),Lebanon,Female,45-49 years,Anxiety disorders,Behavioral risks,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Both,45-49 years,Anxiety disorders,Behavioral risks,Rate,2021,0.71
+YLDs (Years Lived with Disability),Lebanon,Male,45-49 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,1.53
+YLDs (Years Lived with Disability),Lebanon,Female,45-49 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Both,45-49 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.71
+YLDs (Years Lived with Disability),Lebanon,Male,45-49 years,Depressive disorders,Behavioral risks,Rate,2021,63.36
+YLDs (Years Lived with Disability),Lebanon,Female,45-49 years,Depressive disorders,Behavioral risks,Rate,2021,288.80
+YLDs (Years Lived with Disability),Lebanon,Both,45-49 years,Depressive disorders,Behavioral risks,Rate,2021,183.87
+YLDs (Years Lived with Disability),Lebanon,Male,45-49 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,63.36
+YLDs (Years Lived with Disability),Lebanon,Female,45-49 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,43.59
+YLDs (Years Lived with Disability),Lebanon,Both,45-49 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,52.79
+YLDs (Years Lived with Disability),Lebanon,Male,50-69 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,14.53
+YLDs (Years Lived with Disability),Lebanon,Female,50-69 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,35.73
+YLDs (Years Lived with Disability),Lebanon,Both,50-69 years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,26.15
+YLDs (Years Lived with Disability),Lebanon,Male,50-69 years,Anxiety disorders,Behavioral risks,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Female,50-69 years,Anxiety disorders,Behavioral risks,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Both,50-69 years,Anxiety disorders,Behavioral risks,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Male,50-69 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Female,50-69 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Both,50-69 years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Male,50-69 years,Depressive disorders,Behavioral risks,Rate,2021,14.53
+YLDs (Years Lived with Disability),Lebanon,Female,50-69 years,Depressive disorders,Behavioral risks,Rate,2021,194.98
+YLDs (Years Lived with Disability),Lebanon,Both,50-69 years,Depressive disorders,Behavioral risks,Rate,2021,113.48
+YLDs (Years Lived with Disability),Lebanon,Male,70+ years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,6.04
+YLDs (Years Lived with Disability),Lebanon,Female,70+ years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,13.34
+YLDs (Years Lived with Disability),Lebanon,Both,70+ years,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,9.96
+YLDs (Years Lived with Disability),Lebanon,Male,70+ years,Anxiety disorders,Behavioral risks,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Female,70+ years,Anxiety disorders,Behavioral risks,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Both,70+ years,Anxiety disorders,Behavioral risks,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Male,70+ years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Female,70+ years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Both,70+ years,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,0.00
+YLDs (Years Lived with Disability),Lebanon,Male,70+ years,Depressive disorders,Behavioral risks,Rate,2021,6.04
+YLDs (Years Lived with Disability),Lebanon,Female,70+ years,Depressive disorders,Behavioral risks,Rate,2021,75.35
+YLDs (Years Lived with Disability),Lebanon,Both,70+ years,Depressive disorders,Behavioral risks,Rate,2021,43.23
+YLDs (Years Lived with Disability),Lebanon,Male,All ages,Anxiety disorders,Behavioral risks,Rate,2021,61.68
+YLDs (Years Lived with Disability),Lebanon,Female,All ages,Anxiety disorders,Behavioral risks,Rate,2021,27.11
+YLDs (Years Lived with Disability),Lebanon,Both,All ages,Anxiety disorders,Behavioral risks,Rate,2021,44.38
+YLDs (Years Lived with Disability),Lebanon,Male,All ages,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,61.68
+YLDs (Years Lived with Disability),Lebanon,Female,All ages,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,27.11
+YLDs (Years Lived with Disability),Lebanon,Both,All ages,Anxiety disorders,Childhood sexual abuse and bullying,Rate,2021,44.38
+YLDs (Years Lived with Disability),Lebanon,Male,All ages,Depressive disorders,Behavioral risks,Rate,2021,85.54
+YLDs (Years Lived with Disability),Lebanon,Female,All ages,Depressive disorders,Behavioral risks,Rate,2021,200.53
+YLDs (Years Lived with Disability),Lebanon,Both,All ages,Depressive disorders,Behavioral risks,Rate,2021,143.08
+YLDs (Years Lived with Disability),Lebanon,Male,All ages,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,85.54
+YLDs (Years Lived with Disability),Lebanon,Female,All ages,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,59.94
+YLDs (Years Lived with Disability),Lebanon,Both,All ages,Depressive disorders,Childhood sexual abuse and bullying,Rate,2021,72.73
