@@ -91,7 +91,7 @@ def main():
     sel_causes = st.sidebar.multiselect("Disorder", causes, default=["Anxiety disorders"], key="sel_causes")
     sel_sexes  = st.sidebar.multiselect("Sex", sexes, default=["Female","Male"], key="sel_sexes")
     sel_ages   = st.sidebar.multiselect("Age Group", ages, default=["All ages"], key="sel_ages")
-    sel_years  = st.sidebar.slider("Year Range", min_year, max_year, (min_year, max_year), key="sel_years")
+    sel_years  = st.sidebar.slider("Year Range", 2015, max_year, (2015, max_year), key="sel_years")
 
     st.sidebar.markdown("---")
     st.sidebar.header("Filters — Risk Factors")
@@ -160,43 +160,87 @@ def main():
         )
 
     # Row 1 chart
-    metric_map = {
-        "Prevalence Rate": "prevalence_rate",
-        "Incidence Rate":  "incidence_rate",
-        "YLDs Rate":       "ylds_rate"
-    }
-    metric_choice = st.selectbox("Choose metric", list(metric_map.keys()), key="main_metric")
-    disorder_text1 = ", ".join(sel_causes)
-    st.markdown(f"#### {metric_choice} per 100k for **{disorder_text1}** — Global vs Lebanon", unsafe_allow_html=True)
+    st.subheader("Trend vs. Gender Comparison (2015 – 2021)")
 
-    df_plot = (
-        mh_df[
+    col_a, col_b = st.columns(2)
+
+    # A) Benchmark: Lebanon vs Global (line chart)
+    with col_a:
+        metric_map = {
+            "Prevalence Rate": "prevalence_rate",
+            "Incidence Rate":  "incidence_rate",
+            "YLDs Rate":       "ylds_rate"
+        }
+        metric_choice = st.selectbox(
+            "Benchmark Metric", list(metric_map.keys()),
+            key="bench_metric"
+        )
+        disorder_text = ", ".join(sel_causes)
+        st.markdown(
+            f"**{metric_choice} per 100k for {disorder_text} — Lebanon vs Global**",
+            unsafe_allow_html=True
+        )
+        df_line = mh_df[
             mh_df['country'].isin(['Lebanon','Global']) &
             mh_df['cause'].isin(sel_causes) &
             mh_df['sex'].isin(sel_sexes) &
             mh_df['age'].isin(sel_ages) &
             mh_df['year'].between(sel_years[0], sel_years[1])
-        ]
-        .assign(Legend=lambda d: d['country'] + " | " + d['sex'] + " | " + d['age'])
-    )
-    bar = alt.Chart(df_plot).mark_bar().encode(
-        x=alt.X('year:O', title='Year'),
-        xOffset=alt.XOffset('country:N'),
-        y=alt.Y(f"{metric_map[metric_choice]}:Q", title=f"{metric_choice} per 100k"),
-        color='Legend:N',
-        tooltip=[
-            alt.Tooltip('year:O', title='Year'),
-            alt.Tooltip('Legend:N', title='Country | Sex | Age'),
-            alt.Tooltip(f"{metric_map[metric_choice]}:Q", title=metric_choice, format=".1f")
-        ]
-    ).properties(height=350)
-    st.altair_chart(bar, use_container_width=True)
+        ].assign(Legend=lambda d: d['country'] + " | " + d['sex'] + " | " + d['age'])
+        chart_line = (
+            alt.Chart(df_line)
+            .mark_line(point=True)
+            .encode(
+                x=alt.X('year:O', title='Year'),
+                y=alt.Y(f"{metric_map[metric_choice]}:Q", title=f"{metric_choice} per 100k"),
+                color=alt.Color('Legend:N', title='Country | Sex | Age'),
+                tooltip=[
+                    alt.Tooltip('year:O', title='Year'),
+                    alt.Tooltip('Legend:N', title='Country | Sex | Age'),
+                    alt.Tooltip(f"{metric_map[metric_choice]}:Q", title=metric_choice, format=".1f")
+                ]
+            )
+            .properties(height=300)
+        )
+        st.altair_chart(chart_line, use_container_width=True)
+
+    # B) Deep Dive: Lebanon male vs female (grouped bar)
+    with col_b:
+        metric_choice2 = st.selectbox(
+            "Gender Metric", list(metric_map.keys()),
+            key="deep_metric"
+        )
+        disorder_text2 = ", ".join(sel_causes)
+        st.markdown(
+            f"**{metric_choice2} per 100k for {disorder_text2} — Lebanon M vs F**",
+            unsafe_allow_html=True
+        )
+        df_bar = mh_df[
+            (mh_df['country'] == 'Lebanon') &
+            mh_df['cause'].isin(sel_causes) &
+            mh_df['sex'].isin(sel_sexes) &
+            mh_df['age'].isin(sel_ages) &
+            mh_df['year'].between(sel_years[0], sel_years[1])
+        ].assign(Legend=lambda d: d['sex'] + " | " + d['age'])
+        chart_bar = (
+            alt.Chart(df_bar)
+            .mark_bar()
+            .encode(
+                x=alt.X('year:O', title='Year'),
+                y=alt.Y(f"{metric_map[metric_choice2]}:Q", title=f"{metric_choice2} per 100k"),
+                color=alt.Color('Legend:N', title='Sex | Age'),
+                xOffset=alt.XOffset('Legend:N'),
+                tooltip=['year','Legend', f"{metric_map[metric_choice2]}"]
+            )
+            .properties(height=300)
+        )
+        st.altair_chart(chart_bar, use_container_width=True)
 
     # Row 2 chart
     col1, col2, col3 = st.columns([2,2,3])
     with col1:
         st.markdown(
-            f"<div style='font-size:1.2em;'><h4 style='text-align:center;'>Suicide Ideation Risk by Disorder (2014)</h4></div>", 
+            f"<div style='font-size:1.2em;'><h4 style='text-align:center;'>Suicide Ideation Risk by Disorder (2014)</h4></div>",
             unsafe_allow_html=True)
         max_upper = risk_df['ci_higher'].max() * 1.1
         interval = (
