@@ -160,7 +160,7 @@ def main():
         )
 
     # Row 1 chart
-    st.subheader("Trend vs. Gender Comparison (2015 – 2021)")
+    st.subheader("Trend Comparison (2015 – 2021)")
 
     col_a, col_b = st.columns(2)
 
@@ -204,7 +204,7 @@ def main():
         )
         st.altair_chart(chart_line, use_container_width=True)
 
-    # B) Deep Dive: Lebanon male vs female (grouped bar)
+    # B) Deep Dive: Lebanon male vs female bar chart
     with col_b:
         metric_choice2 = st.selectbox(
             "Gender Metric", list(metric_map.keys()),
